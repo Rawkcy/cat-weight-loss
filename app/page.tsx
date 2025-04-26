@@ -2,13 +2,15 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen flex flex-col">
       {/* Navbar */}
       <nav className="fixed w-full bg-white/80 backdrop-blur-sm z-50 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
-              <span className="text-2xl font-bold text-gray-900">CatWeightLoss</span>
+              <a href="/" className="text-2xl font-bold text-gray-900 hover:text-indigo-600">
+                CatWeightLoss
+              </a>
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-center space-x-4">
@@ -30,9 +32,9 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <div className="relative pt-16">
+      <div className="flex-1 flex items-center justify-center pt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center py-20">
+          <div className="text-center">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
               <span className="block">Help Your Cat Achieve</span>
               <span className="block text-indigo-600">Their Ideal Weight</span>
@@ -43,10 +45,10 @@ export default function Home() {
             <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
               <div className="rounded-md shadow">
                 <a
-                  href="#"
+                  href="/get-started"
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
                 >
-                  Get Started
+                  CALCULATE
                 </a>
               </div>
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
@@ -63,8 +65,8 @@ export default function Home() {
       </div>
 
       {/* Feature Section */}
-      <div className="py-12 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="lg:text-center">
             <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Features</h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
